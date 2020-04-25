@@ -1,0 +1,41 @@
+button {
+  border-radius: 2px;
+  padding: 5px 25;
+  border: none;
+  color: white;
+}
+
+.primary {
+  background-color: #33a0ff;
+}
+.primary:hover {
+  background-color: #2e90e5;
+}
+
+.secondary {
+  background-color: #22262a;
+}
+.secondary:hover {
+  background-color: #13161a;
+}
+
+.warning {
+  background-color: #ffc600;
+}
+.warning:hover {
+  background-color: #ebb600;
+}
+
+.success {
+  background-color: #0ad00a;
+}
+.success:hover {
+  background-color: #07c107;
+}
+
+.danger {
+  background-color: #ff4858ed;
+}
+.danger:hover {
+  background-color: #f53848;
+}
