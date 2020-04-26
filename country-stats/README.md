@@ -87,6 +87,9 @@ src
       |__ CountryData
             |__ CountryData.js
             |__ CountryData.css
+      |__ CountryList
+            |__ CountryList.js      
+            |__ CountryList.css      
       |__ Description
             |__ Description.js
             |__ Description.css
@@ -119,6 +122,7 @@ src
 | :----------: | :--------: | :---: | :---: | :---------------------------------------------------------------------- |
 | App          | functional |   n   |   n   | _The App will be my main component._                                    |
 | CountryData  | functional |   y   |   y   | _The CountryData will display the country information._                 |
+| CountryList  | functional |   y   |   y   | _The CountryList will display a list of countries linked to data._      |
 | Description  | functional |   n   |   n   | _The Description will display the description of the product._          |
 | Header       | functional |   n   |   n   | _The Header will contain the logo/title and a link._                    |
 | ScrollBar    | functional |   y   |   y   | _The ScrollBar will contain a scrollable list of countries._            |
@@ -134,14 +138,15 @@ src
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | App                 |    H     |     2 hr       |      hrs     |     hrs    |
 | CountryData         |    H     |     6 hrs      |      hrs     |     hrs    |
-| Description         |    H     |     1 hr       |      hrs     |     hrs    |
+| CountryList         |    H     |     6 hrs      |      hrs     |     hrs    |
+| Description         |    L     |     .5 hr      |      hrs     |     hrs    |
 | Header              |    H     |     2 hrs      |      hrs     |     hrs    |
 | ScrollBar           |    H     |     6 hrs      |      hrs     |     hrs    |
 | SearchBar           |    H     |     6 hrs      |      hrs     |     hrs    |
-| SearchButton        |    H     |     4 hrs      |      hrs     |     hrs    |
-| Stories             |    H     |     3 hrs      |      hrs     |     hrs    |
-| CSS                 |    L     |     7 hrs      |      hrs     |     hrs    |
-| Unexpected Debugging|    L     |     3 hrs      |      hrs     |     hrs    |
+| SearchButton        |    H     |     2.5 hrs    |      hrs     |     hrs    |
+| Stories             |    M     |     2.5 hrs    |      hrs     |     hrs    |
+| CSS                 |    L     |     4.5 hrs    |      hrs     |     hrs    |
+| Unexpected Debugging|    L     |     2 hrs      |      hrs     |     hrs    |
 | TOTAL               |          |     40 hrs     |      hrs     |     TBD     |
 
 <br>
