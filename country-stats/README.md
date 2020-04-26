@@ -155,8 +155,6 @@ src
 
 ### Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
-
 - _Add maps to each countries using a second source._
 - _Link my Project 1 (Currency Converter) into this project._
 
