@@ -29,13 +29,13 @@
 ### Wireframes
 
 - Mobile
-![alt text](./src/Assets/Wireframes/Mobile.png)
+  ![alt text](./src/Assets/Wireframes/Mobile.png)
 
 - Tablet
-![alt text](./src/Assets/Wireframes/Tablet.png)
+  ![alt text](./src/Assets/Wireframes/Tablet.png)
 
 - Desktop
-![alt text](./src/Assets/Wireframes/Desktop.png)
+  ![alt text](./src/Assets/Wireframes/Desktop.png)
 
 <br>
 
@@ -58,11 +58,11 @@ _The **Country Stats** MVP will focus on letting users have an easily interactiv
 
 #### Libraries
 
-|     Library      | Description                                         |
-| :--------------: | :---------------------------------------------------|
-|   React Router   | _Will be used to link countries to its data._       |
-|   Story Book     | _Will be used to create buttons, search bars, etc._ |
-|   Axios          | _Will be used to get data from API._                |
+|   Library    | Description                                         |
+| :----------: | :-------------------------------------------------- |
+| React Router | _Will be used to link countries to its data._       |
+|  Story Book  | _Will be used to create buttons, search bars, etc._ |
+|    Axios     | _Will be used to get data from API._                |
 
 <br>
 
@@ -76,8 +76,6 @@ _The **Country Stats** MVP will focus on letting users have an easily interactiv
 
 #### Component Hierarchy
 
-> Use this section to define your React components and the data architecture of your app.
-
 ```
 src
 |__ Components/
@@ -88,8 +86,8 @@ src
             |__ CountryData.js
             |__ CountryData.css
       |__ CountryList
-            |__ CountryList.js      
-            |__ CountryList.css      
+            |__ CountryList.js
+            |__ CountryList.css
       |__ Description
             |__ Description.js
             |__ Description.css
@@ -101,16 +99,16 @@ src
             |__ ScrollBar.css
       |__ SearchBar
             |__ SearchBar.js
-            |__ SearchBar.css            
+            |__ SearchBar.css
       |__ SearchButton
             |__ Button.js
             |__ Button.css
       |__ Stories
-            |__ HomeButton             
+            |__ HomeButton
             |__ LinkButton
             |__ ScrollBar
-            |__ SearchBar      
-            |__ SearchButton                 
+            |__ SearchBar
+            |__ SearchButton
 
 ```
 
@@ -120,38 +118,36 @@ src
 
 |  Component   |    Type    | state | props | Description                                                             |
 | :----------: | :--------: | :---: | :---: | :---------------------------------------------------------------------- |
-| App          | functional |   n   |   n   | _The App will be my main component._                                    |
+|     App      | functional |   n   |   n   | _The App will be my main component._                                    |
 | CountryData  | functional |   y   |   y   | _The CountryData will display the country information._                 |
 | CountryList  | functional |   y   |   y   | _The CountryList will display a list of countries linked to data._      |
 | Description  | functional |   n   |   n   | _The Description will display the description of the product._          |
-| Header       | functional |   n   |   n   | _The Header will contain the logo/title and a link._                    |
-| ScrollBar    | functional |   y   |   y   | _The ScrollBar will contain a scrollable list of countries._            |
-| SearchBar    | functional |   y   |   y   | _The SearchBar will allow user to search for countries._                |
+|    Header    | functional |   n   |   n   | _The Header will contain the logo/title and a link._                    |
+|  ScrollBar   | functional |   y   |   y   | _The ScrollBar will contain a scrollable list of countries._            |
+|  SearchBar   | functional |   y   |   y   | _The SearchBar will allow user to search for countries._                |
 | SearchButton | functional |   y   |   y   | _The SearchButton will be used with the SearchBar to search countries._ |
-| Stories      | functional |   n   |   y   | _The Stories will be used to set up the components._                    |
+|   Stories    | functional |   n   |   y   | _The Stories will be used to set up the components._                    |
 
 <br>
 
 #### Component Estimates
 
-| Task                | Priority | Estimated Time | Time Invested | Actual Time |
-| ------------------- | :------: | :------------: | :-----------: | :---------: |
-| App                 |    H     |     2 hr       |      hrs     |     hrs    |
-| CountryData         |    H     |     6 hrs      |      hrs     |     hrs    |
-| CountryList         |    H     |     6 hrs      |      hrs     |     hrs    |
-| Description         |    L     |     .5 hr      |      hrs     |     hrs    |
-| Header              |    H     |     2 hrs      |      hrs     |     hrs    |
-| ScrollBar           |    H     |     6 hrs      |      hrs     |     hrs    |
-| SearchBar           |    H     |     6 hrs      |      hrs     |     hrs    |
-| SearchButton        |    H     |     2.5 hrs    |      hrs     |     hrs    |
-| Stories             |    M     |     2.5 hrs    |      hrs     |     hrs    |
-| CSS                 |    L     |     4.5 hrs    |      hrs     |     hrs    |
-| Unexpected Debugging|    L     |     2 hrs      |      hrs     |     hrs    |
-| TOTAL               |          |     40 hrs     |      hrs     |     TBD     |
+| Task                 | Priority | Estimated Time | Time Invested | Actual Time |
+| -------------------- | :------: | :------------: | :-----------: | :---------: |
+| App                  |    H     |      2 hr      |      hrs      |     hrs     |
+| CountryData          |    H     |     6 hrs      |      hrs      |     hrs     |
+| CountryList          |    H     |     6 hrs      |      hrs      |     hrs     |
+| Description          |    L     |     .5 hr      |      hrs      |     hrs     |
+| Header               |    H     |     2 hrs      |      hrs      |     hrs     |
+| ScrollBar            |    H     |     6 hrs      |      hrs      |     hrs     |
+| SearchBar            |    H     |     6 hrs      |      hrs      |     hrs     |
+| SearchButton         |    H     |    2.5 hrs     |      hrs      |     hrs     |
+| Stories              |    M     |    2.5 hrs     |      hrs      |     hrs     |
+| CSS                  |    L     |    4.5 hrs     |      hrs      |     hrs     |
+| Unexpected Debugging |    L     |     2 hrs      |      hrs      |     hrs     |
+| TOTAL                |          |     40 hrs     |      hrs      |     TBD     |
 
 <br>
-
-
 
 ### Post-MVP
 
