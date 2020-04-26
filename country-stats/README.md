@@ -1,7 +1,4 @@
 # Country-Stats
-GA: Project 2
-
-# PROJECT 2 README <!-- omit in toc -->
 
 - [Project Planning](#Project-Planning)
   - [Overview](#Overview)
@@ -21,45 +18,24 @@ GA: Project 2
 
 ## Project Planning
 
-> The Project Planning section should be completed for your project pitch with instructors.
->
-> To ensure correct Markdown, I recommend cloning this wiki and copy/pasting the raw template code.
-
 <br>
 
 ### Overview
 
-_**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+**Country Stats** is an informative app. User will be able to select which county they wish to learn about. Some details include: name, region, language, currency, etc. The list of countries will be in alphabetical order. User may go through the list or search for a specific country.
 
 <br>
 
 ### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views.
+- Mobile
+  ![alt text](Wireframes/Mobile.png)
 
-![Dummy Link](url)
+Tablet
+![alt text](Wireframes/Tablet.png)
 
-- Desktop Landing
-
-![Dummy Link](url)
-
-- Desktop Body
-
-![Dummy Link](url)
-
-- Desktop Resource Index
-
-![Dummy Link](url)
-
-- Desktop Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
+- Desktop
+  ![alt text](Wireframes/Desktop.png)
 
 <br>
 
@@ -95,11 +71,9 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 #### Data
 
-> Use the Data Section to define the API(s) you will be consuming for your project, inluding sample URL queries.
-
-|    API     | Quality Docs? | Website       | Sample Query                            |
-| :--------: | :-----------: | :------------ | :-------------------------------------- |
-| WeatherAPI |      yes      | _example.com_ | _example.com/mickeymouse?s=movies&t=10_ |
+|       API        | Quality Docs? | Website            | Sample Query                                              |
+| :--------------: | :-----------: | :----------------- | :-------------------------------------------------------- |
+| Rest Country API |      Yes      | _restcountries.eu_ | _https://restcountries.eu/rest/v2/name/usa?fullText=true_ |
 
 <br>
 
@@ -142,7 +116,7 @@ src
 
 #### Component Estimates
 
-> Use this section to estimate the time necessary to build out each of the components you've described above. 
+> Use this section to estimate the time necessary to build out each of the components you've described above.
 >
 > Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evalute possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe.
 
@@ -173,7 +147,7 @@ src
 
 <br>
 
-***
+---
 
 ## Project Delivery
 
