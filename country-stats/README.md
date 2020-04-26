@@ -29,43 +29,40 @@
 ### Wireframes
 
 - Mobile
-  ![alt text](Wireframes/Mobile.png)
+![alt text](./src/Assets/Wireframes/Mobile.png)
 
-Tablet
-![alt text](Wireframes/Tablet.png)
+- Tablet
+![alt text](./src/Assets/Wireframes/Tablet.png)
 
 - Desktop
-  ![alt text](Wireframes/Desktop.png)
+![alt text](./src/Assets/Wireframes/Desktop.png)
 
 <br>
 
 ### MVP
 
-> The Minimum Viable Product should be a well-planned and easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
-
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
-
-<br>
+_The **Country Stats** MVP will focus on letting users have an easily interactive product. Whether on a phone, tablet, or desktop, user will be able to navigate through the application and find the information they require. I will be aiming to achieve the following goals:_
 
 #### Goals
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- _Successfully import data from the API._
+- _Utilize the data and implement it in a format based on the respective layout._
+  - _Allow user to search for the specified country._
+    - _Display the data of the country searched._
+  - _Allow user to scroll through the countries on smaller devices._
+    - _Display the data of selected country._
+  - _Display a list of the countries on desktop mode._
+    - _Link the country name to its respective data._
 
 <br>
 
 #### Libraries
 
-> Use this section to list all supporting libraries and their role in the project.
-
-|     Library      | Description                                |
-| :--------------: | :----------------------------------------- |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Spring   | _Lorem ipsum dolor sit amet, consectetur._ |
+|     Library      | Description                                         |
+| :--------------: | :---------------------------------------------------|
+|   React Router   | _Will be used to link countries to its data._       |
+|   Story Book     | _Will be used to create buttons, search bars, etc._ |
+|   Axios          | _Will be used to get data from API._                |
 
 <br>
 
@@ -83,48 +80,80 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 ```
 src
-|__ assets/
-      |__ data-tests
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
-|__ components/
-      |__ Header.jsx
-      |__ Hero.jsx
-      |__ Ipsum.jsx
-      |__ Lorem.jsx
-      |__ CTA.jsx
-      |__ Footer.jsx
+|__ Components/
+      |__ App
+            |__ App.js
+            |__ App.css
+      |__ CountryData
+            |__ CountryData.js
+            |__ CountryData.css
+      |__ Description
+            |__ Description.js
+            |__ Description.css
+      |__ Header
+            |__ Header.js
+            |__ Header.css
+      |__ ScrollBar
+            |__ ScrollBar.js
+            |__ ScrollBar.css
+      |__ SearchBar
+            |__ SearchBar.js
+            |__ SearchBar.css            
+      |__ SearchButton
+            |__ Button.js
+            |__ Button.css
+      |__ Stories
+            |__ HomeButton             
+            |__ LinkButton
+            |__ ScrollBar
+            |__ SearchBar      
+            |__ SearchButton                 
+
 ```
 
 <br>
 
 #### Component Breakdown
 
-> Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
-
-|  Component   |    Type    | state | props | Description                                                      |
-| :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
-|  Navigation  | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
-|   Gallery    |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
-| Gallery Card | functional |   n   |   y   | _The cards will render the post info via props._                 |
-|    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
+|  Component   |    Type    | state | props | Description                                                             |
+| :----------: | :--------: | :---: | :---: | :---------------------------------------------------------------------- |
+| App          | functional |   n   |   n   | _The App will be my main component._                                    |
+| CountryData  | functional |   y   |   y   | _The CountryData will display the country information._                 |
+| Description  | functional |   n   |   n   | _The Description will display the description of the product._          |
+| Header       | functional |   n   |   n   | _The Header will contain the logo/title and a link._                    |
+| ScrollBar    | functional |   y   |   y   | _The ScrollBar will contain a scrollable list of countries._            |
+| SearchBar    | functional |   y   |   y   | _The SearchBar will allow user to search for countries._                |
+| SearchButton | functional |   y   |   y   | _The SearchButton will be used with the SearchBar to search countries._ |
+| Stories      | functional |   n   |   y   | _The Stories will be used to set up the components._                    |
 
 <br>
 
 #### Component Estimates
 
-> Use this section to estimate the time necessary to build out each of the components you've described above.
->
-> Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evalute possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe.
-
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| App                 |    H     |     2 hr       |      hrs     |     hrs    |
+| CountryData         |    H     |     6 hrs      |      hrs     |     hrs    |
+| Description         |    H     |     1 hr       |      hrs     |     hrs    |
+| Header              |    H     |     2 hrs      |      hrs     |     hrs    |
+| ScrollBar           |    H     |     6 hrs      |      hrs     |     hrs    |
+| SearchBar           |    H     |     6 hrs      |      hrs     |     hrs    |
+| SearchButton        |    H     |     4 hrs      |      hrs     |     hrs    |
+| Stories             |    H     |     3 hrs      |      hrs     |     hrs    |
+| CSS                 |    L     |     7 hrs      |      hrs     |     hrs    |
+| Unexpected Debugging|    L     |     3 hrs      |      hrs     |     hrs    |
+| TOTAL               |          |     40 hrs     |      hrs     |     TBD     |
+
+<br>
+
+
+
+### Post-MVP
+
+> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+
+- _Add maps to each countries using a second source._
+- _Link my Project 1 (Currency Converter) into this project._
 
 <br>
 
@@ -135,15 +164,6 @@ src
 |  Function  | Description                                |
 | :--------: | :----------------------------------------- |
 | Capitalize | _Lorem ipsum dolor sit amet, consectetur._ |
-
-<br>
-
-### Post-MVP
-
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
-
-- _Add user account and auth capabilities._
-- _Utilize the Giphy API to welcome new users with funny gifs._
 
 <br>
 
