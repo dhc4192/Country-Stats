@@ -1,7 +1,7 @@
 import React from "react";
-import "./SearchButton.css";
+import "./CC.css";
 
-export default function SearchButton(props) {
+export default function CC(props) {
   return (
     <div>
       <button className={props.type}>{props.label}</button>
