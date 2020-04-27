@@ -1,0 +1,13 @@
+button {
+  border-radius: 2px;
+  padding: 5px 25;
+  border: none;
+  color: white;
+}
+
+.Search {
+  background-color: #33a0ff;
+}
+.Search:hover {
+  background-color: #2e90e5;
+}
