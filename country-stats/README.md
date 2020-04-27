@@ -29,13 +29,13 @@
 ### Wireframes
 
 - Mobile
-  ![alt text](./src/Assets/Wireframes/Mobile.png)
+  ![alt text](src/Assets/Wireframes/Mobile.png)
 
 - Tablet
-  ![alt text](./src/Assets/Wireframes/Tablet.png)
+  ![alt text](src/Assets/Wireframes/Tablet.png)
 
 - Desktop
-  ![alt text](./src/Assets/Wireframes/Desktop.png)
+  ![alt text](src/Assets/Wireframes/Desktop.png)
 
 <br>
 
