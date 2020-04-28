@@ -11,9 +11,10 @@ import SearchBar from "../SearchBar/SearchBar";
 import Description from "../Description/Description";
 import CountryData from "../CountryData/CountryData";
 import CountryList from "../CountryList/CountryList";
-import SearchButton from "../SearchButton/SearchButton";
+import SearchButton from "../SearchBar/SearchButton/SearchButton";
 
-export default function App() {
+export default function App() { 
+
   const [countries, updateCountries] = useState([])
   useEffect(() => {
     const apiCall = async () => {
@@ -34,11 +35,11 @@ export default function App() {
       <main className="AppMain">
         <Description />
         <section className="AppSection">
-          <SearchBar label="Search" type="Search" />
-          <SearchButton label="Submit" type="Submit" />
-          <ScrollBar labe="Scroll" type="Scroll" countries={countries}/>
-          <CountryData />
-          <CountryList />
+          <SearchBar label="Search" type="Search" countries={countries}/>
+          <SearchButton label="Submit" type="Submit" countries={countries}/>
+          <ScrollBar label="Scroll" type="Scroll" countries={countries}/>
+          <CountryData countries={countries}/>
+          <CountryList countries={countries}/>
           <Home label="Home" type="Home" />
         </section>
       </main>

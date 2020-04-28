@@ -1,9 +1,15 @@
 import React from "react";
 
-export default function CountryList() {
+export default function CountryList({ countries }) {
+  
+//! Link each country to data
+
   return (
     <div className="CountryList">
-      <h1>Country List</h1>
+        {/* {countries.map(country =>  */}
+      {/* <p>{country.name}</p> */}
+      <p>Country List</p>
+       {/* )} */}
     </div>
   );
 }
