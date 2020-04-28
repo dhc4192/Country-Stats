@@ -52,7 +52,7 @@ export default function App() {
             countries={countries}
             searchApi={searchApi}
           />
-          <ScrollBar label="Scroll" type="Scroll" countries={countries} />
+          <ScrollBar label="Scroll" type="Scroll" countries={countries} searchApi={searchApi}/>
           <CountryData country={country} />
           <CountryList countries={countries} />
           <Home label="Home" type="Home" />
