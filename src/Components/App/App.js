@@ -30,16 +30,15 @@ export default function App() {
   const searchApi = (countryName) => {
     const country = countries.find(
       (country) =>
-        country.name === countryName ||
-        country.demonym === countryName ||
-        country.alpha3Code === countryName ||
-        country.alpha2Code === countryName
+        country.name.toLowerCase() === countryName.toLowerCase() ||
+        country.demonym.toLowerCase() === countryName.toLowerCase() ||
+        country.alpha3Code.toLowerCase() === countryName.toLowerCase() ||
+        country.alpha2Code.toLowerCase() === countryName.toLowerCase()
     );
     setCountry(country);
   };
 
   console.log(countries);
-  
 
   return (
     <div className="App">

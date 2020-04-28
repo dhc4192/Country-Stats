@@ -1,7 +1,7 @@
 import React from "react";
-import { withRouter, useParams } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 
-export default function CountryData({ country }) {
+function CountryData({ country }) {
   if (country) {
     return (
       <div className="CountryData">
@@ -11,12 +11,12 @@ export default function CountryData({ country }) {
           <p>{country.nativeName}</p>
           <p>{country.altSpellings}</p>
           <p>{country.capital}</p>
-          {/* <p>{country.languages}</p> */}
-          {/* {country.languages.map((lang) => (
+          {country.languages.map((lang) => (
             <p>
-              {lang.name} {lang.nativeName}
+              {lang.name}
+              {lang.nativeName}
             </p>
-          ))} */}
+          ))}
           <p>{country.borders}</p>
           <p>{country.region}</p>
           <p>{country.subregion}</p>
@@ -27,7 +27,7 @@ export default function CountryData({ country }) {
               {curr.code} {curr.name}
             </p>
           ))} */}
-          <p>{country.callingCode}</p>
+          <p>{country.callingCodes}</p>
         </>
       </div>
     );
@@ -35,3 +35,5 @@ export default function CountryData({ country }) {
     return "Please select a valid Country!";
   }
 }
+
+export default withRouter(CountryData);
