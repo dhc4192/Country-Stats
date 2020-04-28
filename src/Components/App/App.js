@@ -11,20 +11,26 @@ import SearchBar from "../SearchBar/SearchBar";
 import Description from "../Description/Description";
 import CountryData from "../CountryData/CountryData";
 import CountryList from "../CountryList/CountryList";
-import SearchButton from "../SearchBar/SearchButton/SearchButton";
+import SearchButton from "../SearchButton/SearchButton";
 
-export default function App() { 
+export default function App() {
+  const [country, setCountry] = useState({});
 
-  const [countries, updateCountries] = useState([])
+  const [countries, updateCountries] = useState([]);
   useEffect(() => {
     const apiCall = async () => {
-      const countryData = await axios('https://restcountries.eu/rest/v2/all')
-      const data = countryData.data
-      updateCountries(data)
-    }
-    apiCall()
-  }, [])
+      const countryData = await axios("https://restcountries.eu/rest/v2/all");
+      const data = countryData.data;
+      updateCountries(data);
+    };
+    apiCall();
+  }, []);
+  console.log(countries)
 
+  const searchApi = (countryName) => {
+      const country = countries.find(country => (country.name === countryName || country.alpha3Code === countryName))
+    setCountry(country)
+  }
 
   return (
     <div className="App">
@@ -35,11 +41,15 @@ export default function App() {
       <main className="AppMain">
         <Description />
         <section className="AppSection">
-          <SearchBar label="Search" type="Search" countries={countries}/>
-          <SearchButton label="Submit" type="Submit" countries={countries}/>
-          <ScrollBar label="Scroll" type="Scroll" countries={countries}/>
-          <CountryData countries={countries}/>
-          <CountryList countries={countries}/>
+          <SearchBar
+            label="Search"
+            type="Search"
+            countries={countries}
+            searchApi={searchApi}
+          />
+          <ScrollBar label="Scroll" type="Scroll" countries={countries} />
+          <CountryData country={country} />
+          <CountryList countries={countries} />
           <Home label="Home" type="Home" />
         </section>
       </main>
