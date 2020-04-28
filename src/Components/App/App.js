@@ -15,8 +15,8 @@ import SearchButton from "../SearchButton/SearchButton";
 
 export default function App() {
   const [country, setCountry] = useState({});
-
   const [countries, updateCountries] = useState([]);
+
   useEffect(() => {
     apiCall();
   }, [country]);
@@ -30,12 +30,16 @@ export default function App() {
   const searchApi = (countryName) => {
     const country = countries.find(
       (country) =>
-        country.name === countryName || country.alpha3Code === countryName || country.alpha2Code === countryName || country.demonym === countryName
-      
+        country.name === countryName ||
+        country.demonym === countryName ||
+        country.alpha3Code === countryName ||
+        country.alpha2Code === countryName
     );
     setCountry(country);
   };
 
+  console.log(countries);
+  
 
   return (
     <div className="App">
@@ -52,7 +56,12 @@ export default function App() {
             countries={countries}
             searchApi={searchApi}
           />
-          <ScrollBar label="Scroll" type="Scroll" countries={countries} searchApi={searchApi}/>
+          <ScrollBar
+            label="Scroll"
+            type="Scroll"
+            countries={countries}
+            searchApi={searchApi}
+          />
           <CountryData country={country} />
           <CountryList countries={countries} />
           <Home label="Home" type="Home" />
