@@ -18,19 +18,24 @@ export default function App() {
 
   const [countries, updateCountries] = useState([]);
   useEffect(() => {
-    const apiCall = async () => {
-      const countryData = await axios("https://restcountries.eu/rest/v2/all");
-      const data = countryData.data;
-      updateCountries(data);
-    };
     apiCall();
-  }, []);
-  console.log(countries)
+  }, [country]);
+
+  const apiCall = async () => {
+    const countryData = await axios("https://restcountries.eu/rest/v2/all");
+    const data = countryData.data;
+    updateCountries(data);
+  };
 
   const searchApi = (countryName) => {
-      const country = countries.find(country => (country.name === countryName || country.alpha3Code === countryName))
-    setCountry(country)
-  }
+    const country = countries.find(
+      (country) =>
+        country.name === countryName || country.alpha3Code === countryName || country.alpha2Code === countryName || country.demonym === countryName
+      
+    );
+    setCountry(country);
+  };
+
 
   return (
     <div className="App">

@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import "./SearchBar.css";
 import SearchButton from "../SearchButton/SearchButton";
-import CountryData from "../CountryData/CountryData";
 
 export default function SearchBar({ countries, searchApi }) {
   const [searchCountry, setSearchCountry] = useState("");
@@ -30,7 +28,6 @@ export default function SearchBar({ countries, searchApi }) {
         <SearchButton
           label="Submit"
           type="Submit"
-          countries={countries}
           handleSubmit={handleSubmit}
         />
       </form>

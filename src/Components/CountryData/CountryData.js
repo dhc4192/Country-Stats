@@ -3,6 +3,7 @@ import { withRouter, useParams } from "react-router-dom";
 
 export default function CountryData({ country }) {
 
+  
   if (country) {
     return (
       <div className="CountryData">
@@ -14,7 +15,7 @@ export default function CountryData({ country }) {
           <p>{country.capital}</p>
           {/* {country.languages.map((lang) => (
             <p>
-              {country.name} {lang.nativeName}
+              {lang.name} {lang.nativeName}
             </p>
           ))} */}
           <p>{country.borders}</p>
@@ -32,6 +33,6 @@ export default function CountryData({ country }) {
       </div>
     );
   } else {
-    return null
+    return ("Please select a valid Country!")
   }
 }
