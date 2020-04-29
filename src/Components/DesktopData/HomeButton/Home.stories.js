@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import Home from "./Home";
+import HomeButton from "./HomeButton";
 
 storiesOf("Home Button", module).add("PrimaryHomeButton", () => (
   <Home label="Home" type="Home" />

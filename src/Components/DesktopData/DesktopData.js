@@ -1,13 +1,12 @@
 import React from "react";
-import { withRouter } from "react-router-dom";
+import HomeButton from "./HomeButton/HomeButton";
+import "./DesktopData.css";
 
-function CountryData({ country }) {
-  if (country === null) {
-    return null;
-  } else if (country) {
-    return (
-      <div className="CountryData">
-        <>
+export default function DesktopData({ countries }) {
+  return (
+    <div className="DesktopData">
+      {countries.map((country) => (
+        <div>
           <img src={country.flag} width="200px" />
           <p>{country.name}</p>
           <p>{country.nativeName}</p>
@@ -35,12 +34,9 @@ function CountryData({ country }) {
           ))}
 
           <p>{country.callingCodes}</p>
-        </>
-      </div>
-    );
-  } else {
-    return "Please select a valid Country!";
-  }
+        </div>
+      ))}
+      <HomeButton />
+    </div>
+  );
 }
-
-export default withRouter(CountryData);

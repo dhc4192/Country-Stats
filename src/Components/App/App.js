@@ -3,19 +3,17 @@ import { Link, Route } from "react-router-dom";
 import axios from "axios";
 
 import "./App.css";
-import CC from "../CC/CC";
-import Home from "../Home/Home";
 import Header from "../Header/Header";
 import ScrollBar from "../ScrollBar/ScrollBar";
 import SearchBar from "../SearchBar/SearchBar";
-import Description from "../Description/Description";
 import CountryData from "../CountryData/CountryData";
-import CountryList from "../CountryList/CountryList";
-import SearchButton from "../SearchButton/SearchButton";
+import DesktopData from "../DesktopData/DesktopData";
+import Description from "../Header/Description/Description";
 
 export default function App() {
-  const [country, setCountry] = useState({});
+  const [country, setCountry] = useState(null);
   const [countries, updateCountries] = useState([]);
+  const Mobile = window.innerWidth <= 500;
 
   useEffect(() => {
     apiCall();
@@ -38,13 +36,10 @@ export default function App() {
     setCountry(country);
   };
 
-  console.log(countries);
-
   return (
     <div className="App">
       <header className="AppHeader">
         <Header />
-        <CC label="Converter" type="Converter" />
       </header>
       <main className="AppMain">
         <Description />
@@ -62,8 +57,7 @@ export default function App() {
             searchApi={searchApi}
           />
           <CountryData country={country} />
-          <CountryList countries={countries} />
-          <Home label="Home" type="Home" />
+          {/* <DesktopData countries={countries} /> */}
         </section>
       </main>
     </div>
