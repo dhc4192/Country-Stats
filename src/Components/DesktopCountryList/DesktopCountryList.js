@@ -12,6 +12,7 @@ export default function DesktopCountryList({ countries }) {
           </Link>
         </div>
       ))}
+      <a class="upbtn" href="#">^</a>
     </div>
   );
 }
