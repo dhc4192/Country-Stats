@@ -1,5 +1,6 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
+import "./CountryData.css";
 
 function CountryData({ country }) {
   if (country === null) {
@@ -9,32 +10,39 @@ function CountryData({ country }) {
       <div className="CountryData">
         <>
           <img src={country.flag} width="200px" />
-          <p>{country.name}</p>
-          <p>{country.nativeName}</p>
-          <p>{country.altSpellings}</p>
-          <p>{country.capital}</p>
+          <p>Country: {country.name}</p>
+          <p>Native Name: {country.nativeName}</p>
+          <p>
+            Alternative Spelling: {country.altSpellings[0]}{" "}
+            {country.altSpellings[1]} {country.altSpellings[2]}{" "}
+            {country.altSpellings[3]}
+          </p>
+          <p>Capital: {country.capital}</p>
 
           {country.languages.map((lang) => (
-            <p>
-              {lang.name}
-              {lang.nativeName}
-            </p>
+            <span>
+              <p>Language: {lang.name}</p>
+              <p>Native Language: {lang.nativeName}</p>
+            </span>
           ))}
 
-          <p>{country.borders}</p>
-          <p>{country.region}</p>
-          <p>{country.subregion}</p>
-          <p>{country.population}</p>
-          <p>{country.timezones}</p>
+          <p>
+            Border: {country.borders[0]} {country.borders[1]}{" "}
+            {country.borders[2]} {country.borders[3]}
+          </p>
+          <p>Region: {country.region}</p>
+          <p>Subregion: {country.subregion}</p>
+          <p>Population: {country.population}</p>
+          <p>Timezone: {country.timezones + " "}</p>
 
           {country.currencies.map((curr) => (
-            <p>
-              {curr.code}
-              {curr.name}
-            </p>
+            <span>
+              <p>Currency Code: {curr.code}</p>
+              <p>Currency Name: {curr.name}</p>
+            </span>
           ))}
 
-          <p>{country.callingCodes}</p>
+          <p>Calling Code: {country.callingCodes}</p>
         </>
       </div>
     );

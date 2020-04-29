@@ -36,6 +36,8 @@ export default function App() {
     setCountry(country);
   };
 
+console.log(countries)
+
   return (
     <div className="App">
       <header className="AppHeader">
