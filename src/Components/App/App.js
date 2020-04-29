@@ -10,10 +10,10 @@ import CountryData from "../CountryData/CountryData";
 import DesktopData from "../DesktopData/DesktopData";
 import Description from "../Description/Description";
 import DesktopCountryList from "../DesktopCountryList/DesktopCountryList";
-import MobileDesign from "../../Assets/MobileDesign.jpg"
+import MobileDesign from "../../Assets/MobileDesign.png";
+import DesktopDesign from "../../Assets/DesktopDesign.jpg"
 
 export default function App() {
-  
   const [country, setCountry] = useState(null);
   const [countries, updateCountries] = useState([]);
   useEffect(() => {
@@ -39,37 +39,37 @@ export default function App() {
   // console.log(countries)
 
   return (
-    <div className="App">
-      <header className="AppHeader">
-        <Header />
-      </header>
-      <main className="AppMain">
-        <Description/>
-        <section className="AppSection">
-          <SearchBar
-            label="Search"
-            type="Search"
-            countries={countries}
-            searchApi={searchApi}
-          />
-          <ScrollBar
-            label="Scroll"
-            type="Scroll"
-            countries={countries}
-            searchApi={searchApi}
-          />
-          <CountryData className="dataSection" country={country} />
-          <Route exact path="/">
-            <DesktopCountryList countries={countries} />
+    <>
+      <div className="App">
+        <header className="AppHeader">
+          <Header />
+        </header>
+        <main className="AppMain">
+          <Description />
+          <section className="AppSection">
+            <SearchBar
+              label="Search"
+              type="Search"
+              countries={countries}
+              searchApi={searchApi}
+            />
+            <ScrollBar
+              label="Scroll"
+              type="Scroll"
+              countries={countries}
+              searchApi={searchApi}
+            />
+            <CountryData className="dataSection" country={country} />
+            <Route exact path="/">
+              <DesktopCountryList countries={countries} />
           </Route>
           <Route path="/country/:name">
             <DesktopData countries={countries} />
           </Route>
-          <div className="backgroundDesign">
-            <img className="mobileDesign" src={MobileDesign}/>
-          </div>
-        </section>
-      </main>
-    </div>
+          </section>
+        </main>
+      </div>
+      <img className="MobileDesign" src={MobileDesign}/>        
+    </>
   );
 }

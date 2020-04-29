@@ -3,5 +3,5 @@ import { storiesOf } from "@storybook/react";
 import HomeButton from "./HomeButton";
 
 storiesOf("Home Button", module).add("PrimaryHomeButton", () => (
-  <Home label="Home" type="Home" />
+  <HomeButton label="Home" type="Home" />
 ));

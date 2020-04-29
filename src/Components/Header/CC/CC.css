@@ -1,5 +1,4 @@
 .Converter {
-  display: flex;
   background: #ffffff;
   border: 1px solid #000000;
   box-sizing: border-box;
@@ -7,4 +6,13 @@
   border-radius: 10px;
   width: 75px;
   height: 21px;
+  font-size: 13px;
+}
+
+@media (min-width: 765px){
+  .Converter{
+    width: 100px;
+    height: 25px;
+    font-size: 16px;
+  }
 }

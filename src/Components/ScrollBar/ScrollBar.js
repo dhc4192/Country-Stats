@@ -13,7 +13,7 @@ export default function ScrollBar({ countries, searchApi }) {
     <div>
       <form>
         <select className="Scroll" onChange={handleChange}>
-          <option>&#8595; Select a Country</option>
+          <option>&#8595; | Select a Country</option>
           {countries.map((country) => (
             <option key={country.name} countries={countries}>
               {country.name}

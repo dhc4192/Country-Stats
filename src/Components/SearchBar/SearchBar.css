@@ -1,14 +1,25 @@
 .Search {
 display: flex;
-width: 249px;
+width: 60vw;
 height: 38px;
-left: 77px;
-top: 256px;
 font-size: 18px;
 border: 1px solid #000000;
-box-sizing: border-box;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 10px;
 margin: 0 auto;
 margin-bottom: 10px;
+}
+
+@media (min-width:1024px){
+  .SearchBarSection{
+    display: flex;
+  }
+  form{
+    display: flex;
+    flex-direction: row;
+  }
+  .Search {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
 }

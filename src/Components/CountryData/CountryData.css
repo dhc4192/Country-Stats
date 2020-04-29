@@ -15,15 +15,15 @@
 
 .flagImg {
   display: flex;
-  width: auto;
-  height: 150px;
+  width: 60vw;
+  height: auto;
   margin: 0 auto;
   margin-top: 5px;
   padding: 10px;
 }
 
 .info {
-  height: auto;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   margin: 0 5px;

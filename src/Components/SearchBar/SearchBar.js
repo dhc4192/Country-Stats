@@ -17,12 +17,12 @@ export default function SearchBar({ countries, searchApi }) {
   };
 
   return (
-    <div>
+    <div className="SearchBarSection">
       <form>
         <input
           type="text"
           className="Search"
-          placeholder="Search....."
+          placeholder=" &#128270; | Search....."
           onChange={handleChange}
         />
         <SearchButton

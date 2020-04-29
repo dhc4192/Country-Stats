@@ -12,3 +12,9 @@
   font-size: 18px;
   justify-content: center;
 }
+
+@media (min-width:1024px){
+  .Submit{
+    margin-top: 13px;
+  }
+}

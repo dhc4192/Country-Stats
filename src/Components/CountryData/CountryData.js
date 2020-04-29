@@ -36,7 +36,7 @@ function CountryData({ country }) {
           <div className="info"><strong>Region:</strong> {country.region}</div>
           <div className="info"><strong>Subregion:</strong> {country.subregion}</div>
           <div className="info"><strong>Population:</strong> {country.population}</div>
-          <div className="info"><strong>Timezone:</strong> {country.timezones + " "}</div>
+          <div className="info"><strong>Timezone:</strong> {country.timezones.join(", ")}</div>
           {country.currencies.map((curr) => (
             <div className="info">
               <div><strong>Currency Code:</strong> {curr.code}</div>
