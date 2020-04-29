@@ -7,44 +7,45 @@ function CountryData({ country }) {
     return null;
   } else if (country) {
     return (
-      <div className="CountryData">
-        <>
-          <img src={country.flag} width="200px" />
-          <p>Country: {country.name}</p>
-          <p>Native Name: {country.nativeName}</p>
-          <p>
-            Alternative Spelling: {country.altSpellings[0]}{" "}
-            {country.altSpellings[1]} {country.altSpellings[2]}{" "}
+      <>
+        <main key="CountryData" className="CountryData">
+          <img className="flagImg" src={country.flag}/>
+          <div className="info"><strong>Country:</strong> {country.name}</div>
+          <div className="info"><strong>Native Name:</strong> {country.nativeName}</div>
+          <div className="info">
+            <strong>Alternative Spelling:</strong>
+            {country.altSpellings[0]}{" "}
+            {country.altSpellings[1]}{" "}
+            {country.altSpellings[2]}{" "}
             {country.altSpellings[3]}
-          </p>
-          <p>Capital: {country.capital}</p>
-
+          </div>
+          <div className="info"><strong>Capital:</strong> {country.capital}</div>
           {country.languages.map((lang) => (
-            <span>
-              <p>Language: {lang.name}</p>
-              <p>Native Language: {lang.nativeName}</p>
-            </span>
+            <div className="info">
+              <div><strong>Language:</strong> {lang.name}</div>
+              <div><strong>Native Language:</strong> {lang.nativeName}</div>
+            </div>
           ))}
-
-          <p>
-            Border: {country.borders[0]} {country.borders[1]}{" "}
-            {country.borders[2]} {country.borders[3]}
-          </p>
-          <p>Region: {country.region}</p>
-          <p>Subregion: {country.subregion}</p>
-          <p>Population: {country.population}</p>
-          <p>Timezone: {country.timezones + " "}</p>
-
+          <div className="info">
+          <strong>Border:</strong>
+            {country.borders[0]}{" "}
+            {country.borders[1]}{" "}
+            {country.borders[2]}{" "}
+            {country.borders[3]}
+          </div>
+          <div className="info"><strong>Region:</strong> {country.region}</div>
+          <div className="info"><strong>Subregion:</strong> {country.subregion}</div>
+          <div className="info"><strong>Population:</strong> {country.population}</div>
+          <div className="info"><strong>Timezone:</strong> {country.timezones + " "}</div>
           {country.currencies.map((curr) => (
-            <span>
-              <p>Currency Code: {curr.code}</p>
-              <p>Currency Name: {curr.name}</p>
-            </span>
+            <div className="info">
+              <div><strong>Currency Code:</strong> {curr.code}</div>
+              <div><strong>Currency Name:</strong> {curr.name}</div>
+            </div>
           ))}
-
-          <p>Calling Code: {country.callingCodes}</p>
-        </>
-      </div>
+          <div className="info"><strong>Calling Code:</strong> {country.callingCodes}</div>
+        </main>
+      </>
     );
   } else {
     return "Please select a valid Country!";

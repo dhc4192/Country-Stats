@@ -8,22 +8,21 @@ import ScrollBar from "../ScrollBar/ScrollBar";
 import SearchBar from "../SearchBar/SearchBar";
 import CountryData from "../CountryData/CountryData";
 import DesktopData from "../DesktopData/DesktopData";
-import Description from "../Header/Description/Description";
+import Description from "../Description/Description";
+import DesktopCountryList from "../DesktopCountryList/DesktopCountryList";
 
 export default function App() {
+  
   const [country, setCountry] = useState(null);
   const [countries, updateCountries] = useState([]);
-  const Mobile = window.innerWidth <= 500;
-
   useEffect(() => {
+    const apiCall = async () => {
+      const countryData = await axios("https://restcountries.eu/rest/v2/all");
+      const data = countryData.data;
+      updateCountries(data);
+    };
     apiCall();
   }, [country]);
-
-  const apiCall = async () => {
-    const countryData = await axios("https://restcountries.eu/rest/v2/all");
-    const data = countryData.data;
-    updateCountries(data);
-  };
 
   const searchApi = (countryName) => {
     const country = countries.find(
@@ -36,7 +35,7 @@ export default function App() {
     setCountry(country);
   };
 
-console.log(countries)
+  console.log(countries)
 
   return (
     <div className="App">
@@ -44,7 +43,7 @@ console.log(countries)
         <Header />
       </header>
       <main className="AppMain">
-        <Description />
+        <Description/>
         <section className="AppSection">
           <SearchBar
             label="Search"
@@ -58,8 +57,17 @@ console.log(countries)
             countries={countries}
             searchApi={searchApi}
           />
-          <CountryData country={country} />
-          {/* <DesktopData countries={countries} /> */}
+          <CountryData className="dataSection" country={country} />
+          {/* <Route exact path="/">
+            <DesktopCountryList countries={countries} />
+          </Route>
+          <Route path="/country/:name">
+            <DesktopData countries={countries} />
+          </Route> */}
+          <div className="backgroundDesign">
+            <div className="background"></div>
+            <div className="background2"></div>
+          </div>
         </section>
       </main>
     </div>

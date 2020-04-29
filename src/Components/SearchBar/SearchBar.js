@@ -22,7 +22,7 @@ export default function SearchBar({ countries, searchApi }) {
         <input
           type="text"
           className="Search"
-          placeholder="Search..."
+          placeholder="Search....."
           onChange={handleChange}
         />
         <SearchButton

@@ -1,10 +1,18 @@
 import React from "react";
+import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import HomeButton from "./HomeButton/HomeButton";
 import "./DesktopData.css";
 
 export default function DesktopData({ countries }) {
+  const { name } = useParams();
+  const country = countries.find((country) => country.name === name);
+
   return (
     <div className="DesktopData">
+      <Link to="/">
+        <HomeButton />
+      </Link>
       {countries.map((country) => (
         <div>
           <img src={country.flag} width="200px" />
@@ -36,7 +44,6 @@ export default function DesktopData({ countries }) {
           <p>{country.callingCodes}</p>
         </div>
       ))}
-      <HomeButton />
     </div>
   );
 }

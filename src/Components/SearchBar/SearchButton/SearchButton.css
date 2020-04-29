@@ -1,3 +1,14 @@
 .Submit {
-  border: 1px solid black;
+  display: flex;
+  width: 134px;
+  height: 36px;
+  left: 138px;
+  top: 311px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  font-size: 18px;
+  justify-content: center;
 }
