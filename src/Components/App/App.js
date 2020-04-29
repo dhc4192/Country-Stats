@@ -10,6 +10,7 @@ import CountryData from "../CountryData/CountryData";
 import DesktopData from "../DesktopData/DesktopData";
 import Description from "../Description/Description";
 import DesktopCountryList from "../DesktopCountryList/DesktopCountryList";
+import MobileDesign from "../../Assets/MobileDesign.jpg"
 
 export default function App() {
   
@@ -35,7 +36,7 @@ export default function App() {
     setCountry(country);
   };
 
-  console.log(countries)
+  // console.log(countries)
 
   return (
     <div className="App">
@@ -58,15 +59,14 @@ export default function App() {
             searchApi={searchApi}
           />
           <CountryData className="dataSection" country={country} />
-          {/* <Route exact path="/">
+          <Route exact path="/">
             <DesktopCountryList countries={countries} />
           </Route>
           <Route path="/country/:name">
             <DesktopData countries={countries} />
-          </Route> */}
+          </Route>
           <div className="backgroundDesign">
-            <div className="background"></div>
-            <div className="background2"></div>
+            <img className="mobileDesign" src={MobileDesign}/>
           </div>
         </section>
       </main>
