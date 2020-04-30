@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import UpButton from "../UpButton/UpButton";
 import "./DesktopCountryList.css";
 
-
 export default function DesktopCountryList({ countries }) {
   return (
     <div key="DesktopList" className="DesktopList">
