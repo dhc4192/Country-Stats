@@ -8,7 +8,7 @@ function CountryData({ country }) {
     return null;
   } else if (country) {
     return (
-      <div className="asdf">
+      <div>
         <main className="CountryData">
           <img className="flagImg" src={country.flag} />
           <div className="info">
@@ -18,50 +18,68 @@ function CountryData({ country }) {
             <strong>Native Name:</strong> {country.nativeName}
           </div>
           <div className="info">
-            <strong>Alternative Spelling:</strong>
+            <strong>Alternative Spelling:</strong>{" "}
             {country.altSpellings.join(", ")}
           </div>
           <div className="info">
             <strong>Capital:</strong> {country.capital}
           </div>
           {country.languages.map((lang) => (
-            <div key="language" className="info">
-              <div>
+            <div className="info">
+              <div key={lang.name}>
                 <strong>Language:</strong> {lang.name}
               </div>
-              <div>
+              <div key={lang.nativeName}>
                 <strong>Native Language:</strong> {lang.nativeName}
               </div>
             </div>
           ))}
           <div className="info">
-            <strong>Border:</strong>
-            {country.borders.join(", ")}
+            <strong>Border:</strong> {country.borders.join(", ")}
           </div>
           <div className="info">
-            <strong>Region:</strong> {country.region}
-          </div>
-          <div className="info">
-            <strong>Subregion:</strong> {country.subregion}
+            <div>
+              <strong>Region:</strong> {country.region}
+            </div>
+            <div>
+              <strong>Subregion:</strong> {country.subregion}
+            </div>
           </div>
           <div className="info">
             <strong>Population:</strong> {country.population}
           </div>
           <div className="info">
+            <strong>Area:</strong> {country.area + " km²"}
+          </div>
+          <div className="info">
             <strong>Timezone:</strong> {country.timezones.join(", ")}
           </div>
           {country.currencies.map((curr) => (
-            <div key="currencies" className="info">
-              <div>
+            <div className="info">
+              <div key={curr.code}>
                 <strong>Currency Code:</strong> {curr.code}
               </div>
-              <div>
+              <div key={curr.name}>
                 <strong>Currency Name:</strong> {curr.name}
               </div>
             </div>
           ))}
           <div className="info">
-            <strong>Calling Code:</strong> {country.callingCodes}
+            <div>
+              <strong>Alpha2Code:</strong> {country.alpha2Code}
+            </div>
+            <div>
+              <strong>Alpha3Code:</strong> {country.alpha3Code}
+            </div>
+            <div>
+              <strong>Calling Code:</strong> {country.callingCodes}
+            </div>
+            <div>
+              <strong>Numeric Code:</strong> {country.numericCode}
+            </div>
+          </div>
+          <div className="info">
+            <strong>Lat-Lng:</strong> {country.latlng.join(", ")}
           </div>
           <div className="CountryDataUp">
             <UpButton label="Up" type="Up" />

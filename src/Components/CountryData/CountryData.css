@@ -10,13 +10,13 @@
   border-radius: 10px;
   background: #ffffff;
   border: 1px solid #000000;
-  box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.60);
+  box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.6);
   background: linear-gradient(
     180deg,
     rgba(0, 46, 116, 0.43) 0.98%,
-    #d5d5d5 100%)
+    #d5d5d5 100%
+  );
 }
-
 
 .flagImg {
   display: flex;
@@ -27,7 +27,7 @@
   padding: 10px;
   border: 1px solid #000000;
   background-color: white;
-  box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.60);
+  box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.6);
 }
 
 .info {
@@ -37,9 +37,9 @@
   padding: 10px;
   margin: 0 5px;
   border-radius: 10px;
-  border: 1px solid #000000;
+  /* border: 1px solid #000000; */
   background-color: white;
-  box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.60);
+  box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.6);
 }
 
 .CountryDataUp {

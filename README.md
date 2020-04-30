@@ -78,37 +78,49 @@ _The **Country Stats** MVP will focus on letting users have an easily interactiv
 
 ```
 src
-|__ Components/
+|__ Components
       |__ App
-            |__ App.js
             |__ App.css
+            |__ App.js
       |__ CountryData
-            |__ CountryData.js
             |__ CountryData.css
-      |__ CountryList
-            |__ CountryList.js
-            |__ CountryList.css
+            |__ CountryData.js
       |__ Description
-            |__ Description.js
             |__ Description.css
+            |__ Description.js
+      |__ DesktopCountryList
+            |__ DesktopCountryList.css
+            |__ DesktopCountryList.js
+      |__ DesktopData
+            |__ DesktopData.css
+            |__ DesktopData.js
+        |__ HomeButton
+              |__ Home.stories.js
+              |__ HomeButton.css
+              |__ HomeButton.js
       |__ Header
-            |__ Header.js
             |__ Header.css
+            |__ Header.js
+        |__ CC
+              |__ CC.css
+              |__ CC.js
+              |__ CC.stories.js
       |__ ScrollBar
-            |__ ScrollBar.js
             |__ ScrollBar.css
+            |__ ScrollBar.js
+            |__ ScrollBar.stories.js
       |__ SearchBar
-            |__ SearchBar.js
             |__ SearchBar.css
-      |__ SearchButton
-            |__ Button.js
-            |__ Button.css
-      |__ Stories
-            |__ HomeButton
-            |__ LinkButton
-            |__ ScrollBar
-            |__ SearchBar
-            |__ SearchButton
+            |__ SearchBar.js
+            |__ SearchBar.stories.js
+        |__ SearchButton
+              |__ Button.css
+              |__ Button.js
+      |__ UpButton
+            |__ UpButton.css
+            |__ UpButton.js      
+            |__ UpButton.stories.js
+
 
 ```
 

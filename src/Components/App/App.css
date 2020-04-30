@@ -2,7 +2,7 @@
   text-align: center;
   position: absolute;
   width: 100%;
-  height: 242vh;
+  height: 258vh;
   margin: 0;
   padding: 0;
 }
@@ -20,17 +20,20 @@
 }
 
 @media (max-width: 375px) {
-  .App {
-    height: 250vh;
-  }
   .MobileDesign {
     height: 25%;
   }
 }
 
+@media (max-width: 330px) {
+  .App {
+    height: 270vh;
+  }
+}
+
 @media (min-width: 765px) {
   .App {
-    height: 260vh;
+    height: 273vh;
   }
   .MobileDesign {
     height: 35%;
