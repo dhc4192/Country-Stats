@@ -9,8 +9,8 @@ import SearchBar from "../SearchBar/SearchBar";
 import CountryData from "../CountryData/CountryData";
 import DesktopData from "../DesktopData/DesktopData";
 import Description from "../Description/Description";
-import DesktopCountryList from "../DesktopCountryList/DesktopCountryList";
 import MobileDesign from "../../Assets/MobileDesign.png";
+import DesktopCountryList from "../DesktopCountryList/DesktopCountryList";
 
 export default function App() {
   const [country, setCountry] = useState(null);
@@ -34,8 +34,6 @@ export default function App() {
     );
     setCountry(country);
   };
-
-  // console.log(countries)
 
   return (
     <>
@@ -61,14 +59,14 @@ export default function App() {
             <CountryData className="dataSection" country={country} />
             <Route exact path="/">
               <DesktopCountryList countries={countries} />
-          </Route>
-          <Route path="/country/:name">
-            <DesktopData countries={countries} />
-          </Route>
+            </Route>
+            <Route path="/country/:name">
+              <DesktopData countries={countries} />
+            </Route>
           </section>
         </main>
       </div>
-      <img className="MobileDesign" src={MobileDesign}/>        
+      <img className="MobileDesign" src={MobileDesign} />
     </>
   );
 }

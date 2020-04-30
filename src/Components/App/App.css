@@ -1,17 +1,17 @@
 .App {
   text-align: center;
   position: absolute;
-  margin: 0;
-  padding: 0;
   width: 100%;
   height: 242vh;
+  margin: 0;
+  padding: 0;
 }
 
 .MobileDesign {
   display: flex;
+  position: fixed;
   width: 100%;
   height: 28%;
-  position: fixed;
   bottom: 0;
 }
 
@@ -28,22 +28,25 @@
   }
 }
 
-@media (min-width: 765px){
-  .App{
+@media (min-width: 765px) {
+  .App {
     height: 260vh;
   }
-  .MobileDesign{
+  .MobileDesign {
     height: 35%;
   }
 }
 
-@media (min-width:1024px){
-  .App{
-    background: linear-gradient(180deg, rgba(0, 46, 116, 0.43) 0.98%, #D5D5D5 100%);
+@media (min-width: 1024px) {
+  .App {
     height: inherit;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 46, 116, 0.43) 0.98%,
+      #d5d5d5 100%
+    );
   }
-  .MobileDesign{
+  .MobileDesign {
     display: none;
   }
-
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import GlobeIcon from "../../Assets/GlobeIcon.png";
-import "./Header.css"
 import CC from "./CC/CC";
+import "./Header.css";
 
 export default function Header() {
   return (

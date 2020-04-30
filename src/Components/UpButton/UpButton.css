@@ -1,17 +1,16 @@
 .Up {
   display: flex;
   justify-content: center;
-  margin: 0 auto;
-  font-size: 40px;
-  float: right;  
   width: 30px;
   height: 30px;
   bottom: 30px;
   right: 30px;
-  margin: 10px;;
-  background-color: rgb(180, 180, 192);
-  color: white;
-  border: 1px solid #000000;
-  box-sizing: border-box;
+  font-size: 40px;
+  float: right;
+  margin: 10px;
+  margin: 0 auto;
   border-radius: 10px;
+  border: 1px solid #000000;
+  color: white;
+  background-color: rgb(180, 180, 192);
 }

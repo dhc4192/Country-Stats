@@ -1,7 +1,7 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-import "./CountryData.css";
 import UpButton from "../UpButton/UpButton";
+import "./CountryData.css";
 
 function CountryData({ country }) {
   if (country === null) {
@@ -9,7 +9,7 @@ function CountryData({ country }) {
   } else if (country) {
     return (
       <>
-        <main key="CountryData" className="CountryData">
+        <main className="CountryData">
           <img className="flagImg" src={country.flag} />
           <div className="info">
             <strong>Country:</strong> {country.name}
@@ -19,14 +19,13 @@ function CountryData({ country }) {
           </div>
           <div className="info">
             <strong>Alternative Spelling:</strong>
-            {country.altSpellings[0]} {country.altSpellings[1]}{" "}
-            {country.altSpellings[2]} {country.altSpellings[3]}
+            {country.altSpellings.join(", ")}
           </div>
           <div className="info">
             <strong>Capital:</strong> {country.capital}
           </div>
           {country.languages.map((lang) => (
-            <div className="info">
+            <div key="language" className="info">
               <div>
                 <strong>Language:</strong> {lang.name}
               </div>
@@ -37,8 +36,7 @@ function CountryData({ country }) {
           ))}
           <div className="info">
             <strong>Border:</strong>
-            {country.borders[0]} {country.borders[1]} {country.borders[2]}{" "}
-            {country.borders[3]}
+            {country.borders.join(", ")}
           </div>
           <div className="info">
             <strong>Region:</strong> {country.region}
@@ -53,7 +51,7 @@ function CountryData({ country }) {
             <strong>Timezone:</strong> {country.timezones.join(", ")}
           </div>
           {country.currencies.map((curr) => (
-            <div className="info">
+            <div key="currencies" className="info">
               <div>
                 <strong>Currency Code:</strong> {curr.code}
               </div>

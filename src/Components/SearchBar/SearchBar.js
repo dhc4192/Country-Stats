@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./SearchBar.css";
 import SearchButton from "./SearchButton/SearchButton";
+import "./SearchBar.css";
 
 export default function SearchBar({ countries, searchApi }) {
   const [searchCountry, setSearchCountry] = useState("");
