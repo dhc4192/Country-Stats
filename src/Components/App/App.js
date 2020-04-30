@@ -11,7 +11,6 @@ import DesktopData from "../DesktopData/DesktopData";
 import Description from "../Description/Description";
 import DesktopCountryList from "../DesktopCountryList/DesktopCountryList";
 import MobileDesign from "../../Assets/MobileDesign.png";
-import DesktopDesign from "../../Assets/DesktopDesign.jpg"
 
 export default function App() {
   const [country, setCountry] = useState(null);

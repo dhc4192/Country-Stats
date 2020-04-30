@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 240vh;
+  height: 242vh;
 }
 
 .MobileDesign {
@@ -21,7 +21,7 @@
 
 @media (max-width: 375px) {
   .App {
-    height: 245vh;
+    height: 250vh;
   }
   .MobileDesign {
     height: 25%;

@@ -1,3 +1,4 @@
+@media (min-width:1024px){
 .DesktopData{
   display: flex;
   flex-direction: column;
@@ -13,12 +14,4 @@
   padding-bottom: 5px;
   padding-top: 10px;
 }
-.upbtn {
-  font-size: 40px;
-  width: 30px;
-  height: 30px;
-  margin: 10px;
-  margin-left:auto;
-  background-color: rgb(180, 180, 192);
-  color: white;
 }

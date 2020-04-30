@@ -1,6 +1,7 @@
 import React from "react";
 import "./DesktopCountryList.css";
 import { Link } from "react-router-dom";
+import UpButton from "../UpButton/UpButton";
 
 export default function DesktopCountryList({ countries }) {
   return (
@@ -12,7 +13,9 @@ export default function DesktopCountryList({ countries }) {
           </Link>
         </div>
       ))}
-      <a class="upbtn" href="#">^</a>
+      <div className="DesktopListUp">
+        <UpButton label="Up" type="Up" />
+      </div>
     </div>
   );
 }

@@ -3,6 +3,7 @@ import { useParams, withRouter } from "react-router-dom";
 import { Link } from "react-router-dom";
 import HomeButton from "./HomeButton/HomeButton";
 import "./DesktopData.css";
+import UpButton from "../UpButton/UpButton";
 
 function DesktopData({ countries }) {
   const { name } = useParams();
@@ -71,10 +72,9 @@ function DesktopData({ countries }) {
           <div className="info">
             <strong>Calling Code:</strong> {country.callingCodes}
           </div>
+          <UpButton label="Up" type="Up"/>
         </div>
-        <a class="upbtn" href="#">
-          ^
-        </a>
+        
       </div>
     );
   } else {
