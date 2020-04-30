@@ -25,11 +25,11 @@ function CountryData({ country }) {
             <strong>Capital:</strong> {country.capital}
           </div>
           {country.languages.map((lang) => (
-            <div className="info">
-              <div key={lang.name}>
+            <div key={lang.name} className="info">
+              <div>
                 <strong>Language:</strong> {lang.name}
               </div>
-              <div key={lang.nativeName}>
+              <div>
                 <strong>Native Language:</strong> {lang.nativeName}
               </div>
             </div>
@@ -55,11 +55,11 @@ function CountryData({ country }) {
             <strong>Timezone:</strong> {country.timezones.join(", ")}
           </div>
           {country.currencies.map((curr) => (
-            <div className="info">
-              <div key={curr.code}>
+            <div key={curr.code} className="info">
+              <div>
                 <strong>Currency Code:</strong> {curr.code}
               </div>
-              <div key={curr.name}>
+              <div>
                 <strong>Currency Name:</strong> {curr.name}
               </div>
             </div>

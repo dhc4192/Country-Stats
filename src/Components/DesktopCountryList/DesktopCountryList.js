@@ -6,9 +6,9 @@ import "./DesktopCountryList.css";
 
 export default function DesktopCountryList({ countries }) {
   return (
-    <div className="DesktopList">
+    <div key="DesktopList" className="DesktopList">
       {countries.map((country) => (
-        <div className="desktopList" key={country.name}>
+        <div key={country.name} className="desktopList">
           <Link className="countryName" to={"/country/" + country.name}>
             {country.name}
           </Link>

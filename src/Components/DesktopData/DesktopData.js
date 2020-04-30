@@ -32,7 +32,7 @@ function DesktopData({ countries }) {
             <strong>Capital:</strong> {country.capital}
           </div>
           {country.languages.map((lang) => (
-            <div className="info">
+            <div key={lang.nativeName} className="info">
               <div>
                 <strong>Language:</strong> {lang.name}
               </div>
@@ -62,7 +62,7 @@ function DesktopData({ countries }) {
             <strong>Timezone:</strong> {country.timezones.join(", ")}
           </div>
           {country.currencies.map((curr) => (
-            <div className="info">
+            <div key={curr.name} className="info">
               <div>
                 <strong>Currency Code:</strong> {curr.code}
               </div>
