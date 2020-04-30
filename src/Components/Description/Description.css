@@ -3,5 +3,12 @@
   margin: 20px;
   border-radius: 10px;
   border: 1px solid #000000;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.60);
+}
+
+@media (min-width: 1024px) {
+  .Description {
+    font-size: 20px;
+  }
 }

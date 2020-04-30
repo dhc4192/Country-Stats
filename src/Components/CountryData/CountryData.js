@@ -8,7 +8,7 @@ function CountryData({ country }) {
     return null;
   } else if (country) {
     return (
-      <>
+      <div className="asdf">
         <main className="CountryData">
           <img className="flagImg" src={country.flag} />
           <div className="info">
@@ -67,7 +67,7 @@ function CountryData({ country }) {
             <UpButton label="Up" type="Up" />
           </div>
         </main>
-      </>
+      </div>
     );
   } else {
     return "Please select a valid Country!";

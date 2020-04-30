@@ -40,11 +40,6 @@
 @media (min-width: 1024px) {
   .App {
     height: inherit;
-    background: linear-gradient(
-      180deg,
-      rgba(0, 46, 116, 0.43) 0.98%,
-      #d5d5d5 100%
-    );
   }
   .MobileDesign {
     display: none;
