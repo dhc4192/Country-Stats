@@ -24,6 +24,8 @@
 
 **Country Stats** is an informative app. User will be able to select which county they wish to learn about. Some details include: name, region, language, currency, etc. The list of countries will be in alphabetical order. User may go through the list or search for a specific country.
 
+Deployed Site: https://countrystats.netlify.app/
+
 <br>
 
 ### Wireframes
@@ -169,8 +171,6 @@ src
 <br>
 
 #### Helper Functions
-
-> Use this section to document all helper functions– generic functions that can be reused in other applications.
 
 |   Function   | Description                                  |
 | :----------: | :------------------------------------------- |

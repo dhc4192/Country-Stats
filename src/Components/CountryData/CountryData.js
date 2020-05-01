@@ -88,7 +88,7 @@ function CountryData({ country }) {
       </div>
     );
   } else {
-    return "Please select a valid Country!";
+    return <strong>Please select a valid Country!</strong>;
   }
 }
 

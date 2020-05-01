@@ -22,8 +22,7 @@
   display: flex;
   width: 60vw;
   height: auto;
-  margin: 0 auto;
-  margin-top: 5px;
+  margin: 5px auto;
   padding: 10px;
   border: 1px solid #000000;
   background-color: white;
@@ -35,7 +34,7 @@
   flex-direction: column;
   height: fit-content;
   padding: 10px;
-  margin: 0 5px;
+  margin: 2px 5px;
   border-radius: 10px;
   background-color: white;
   box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.6);
