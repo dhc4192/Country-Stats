@@ -118,7 +118,7 @@ src
               |__ Button.js
       |__ UpButton
             |__ UpButton.css
-            |__ UpButton.js      
+            |__ UpButton.js
             |__ UpButton.stories.js
 
 
@@ -146,18 +146,18 @@ src
 
 | Task                 | Priority | Estimated Time | Time Invested | Actual Time |
 | -------------------- | :------: | :------------: | :-----------: | :---------: |
-| App                  |    H     |      2 hr      |      hrs      |     hrs     |
-| CountryData          |    H     |     6 hrs      |      hrs      |     hrs     |
-| CountryList          |    H     |     6 hrs      |      hrs      |     hrs     |
-| Description          |    L     |     .5 hr      |      hrs      |     hrs     |
-| Header               |    H     |     2 hrs      |      hrs      |     hrs     |
-| ScrollBar            |    H     |     6 hrs      |      hrs      |     hrs     |
-| SearchBar            |    H     |     6 hrs      |      hrs      |     hrs     |
-| SearchButton         |    H     |    2.5 hrs     |      hrs      |     hrs     |
-| Stories              |    M     |    2.5 hrs     |      hrs      |     hrs     |
-| CSS                  |    L     |    4.5 hrs     |      hrs      |     hrs     |
-| Unexpected Debugging |    L     |     2 hrs      |      hrs      |     hrs     |
-| TOTAL                |          |     40 hrs     |      hrs      |     TBD     |
+| App                  |    H     |      2 hr      |     2 hrs     |    2 hrs    |
+| CountryData          |    H     |     6 hrs      |     5 hrs     |    5 hrs    |
+| CountryList          |    H     |     6 hrs      |     3 hrs     |    3 hrs    |
+| Description          |    L     |     .5 hr      |    .5 hrs     |   .5 hrs    |
+| Header               |    H     |     2 hrs      |     1 hr      |    1 hr     |
+| ScrollBar            |    H     |     6 hrs      |     6 hrs     |    6 hrs    |
+| SearchBar            |    H     |     6 hrs      |     5 hrs     |    5 hrs    |
+| SearchButton         |    H     |    2.5 hrs     |     4 hrs     |    4 hrs    |
+| Stories              |    M     |    2.5 hrs     |     2 hrs     |    2 hrs    |
+| CSS                  |    L     |    4.5 hrs     |     3 hrs     |    3 hrs    |
+| Unexpected Debugging |    L     |     2 hrs      |    .5 hrs     |   .5 hrs    |
+| TOTAL                |          |     40 hrs     |    32 hrs     |   32 hrs    |
 
 <br>
 
@@ -172,20 +172,10 @@ src
 
 > Use this section to document all helper functions– generic functions that can be reused in other applications.
 
-|  Function  | Description                                |
-| :--------: | :----------------------------------------- |
-| Capitalize | _Lorem ipsum dolor sit amet, consectetur._ |
+|   Function   | Description                                  |
+| :----------: | :------------------------------------------- |
+| .toLowerCase | _Makes letters in the word all lower cased._ |
+|    .join     | _Joins words._                               |
+|     Find     | _Found the word needed._                     |
 
 <br>
-
----
-
-## Project Delivery
-
-### Code Showcase
-
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
-
-### Code Issues & Resolutions
-
-> Use this section to list of all major issues encountered and their resolution, if you'd like.
